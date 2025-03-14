@@ -59,19 +59,31 @@ kht-app/
 - [ ] Develop administrative backend for system management
 - [ ] Implement advanced analytics for patient-doctor interactions
 - [ ] Add more comprehensive test coverage
+- [ ] Add more comprehensive documentation
+- [ ] Add more comprehensive security measures
+- [ ] Fix the Onboarding process for the doctors
+- [ ] Add more comprehensive error handling
+- [ ] Add more comprehensive logging
+- [ ] Add more comprehensive monitoring
 
 ## Installation and Setup
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/kht-app.git
+git clone https://github.com/KindHealthTech/v2 kht-app
 cd kht-app
 
 # Install dependencies
 yarn install
 
-# Start the development server
-yarn dev
+# Setup the supabase project
+yarn supabase start
+
+# Start the development server for patient app
+yarn patient start
+
+# Start the development server for patient app
+yarn doctors start
 ```
 
 ## Contributing
