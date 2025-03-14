@@ -1,0 +1,21 @@
+{
+  "name": "kht-app-monorepo",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "doctors": "yarn workspace @kht/doctors-app",
+    "patient": "yarn workspace @kht/patient-app",
+    "shared": "yarn workspace @kht/shared",
+    "supabase:start": "yarn shared supabase:start",
+    "supabase:stop": "yarn shared supabase:stop",
+    "supabase:status": "yarn shared supabase:status",
+    "supabase:reset": "yarn shared supabase:reset",
+    "supabase:new": "yarn shared supabase:new",
+    "supabase:migrate": "yarn shared supabase:migrate"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

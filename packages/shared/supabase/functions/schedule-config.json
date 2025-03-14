@@ -1,0 +1,9 @@
+{
+  "schedules": [
+    {
+      "name": "check_delayed_responses",
+      "schedule": "*/2 * * * *",
+      "function": "handle-delayed-response"
+    }
+  ]
+}
